@@ -1,20 +1,38 @@
-{{#each products}}
-<div class="product">
-    <h2>{{this.title}}</h2>
-    <p>{{this.description}}</p>
-    <p>Precio: ${{this.price}}</p>
-    <a href="/{{this._id}}">Ver detalles</a>
-    <form id="addToCartForm_{{this._id}}" method="PUT"> 
-        <input type="hidden" name="productId" value="{{this._id}}">        
-        <button type="submit">Agregar al carrito</button>
-    </form>
-</div>
-{{/each}}
+<div class="nav-bar">
+    <div class="text-user">
+        <h3>Bienvenido: {{user.name}}</h3>        
+        <h5>{{user.email}}</h5>
+        <h5>Tu Roll es: {{user.role}}</h5>
+    </div>
 
-{{#if hasPrevPage}}
-<a href="?page={{prevPage}}">Página anterior</a>
-{{/if}}
-{{#if hasNextPage}}
-<a href="?page={{nextPage}}">Página siguiente</a>
-{{/if}}
-<script src="/js/handlemain.js"></script> 
+    <div class="btn-close" id="btnclose">Cerrar Sesion</div>
+</div>
+
+
+<div class="products-content">
+
+
+    {{#each products}}
+    <div class="product">
+        <h2>{{this.title}}</h2>
+        <p class="description-text">{{this.description}}</p>
+        <p>Precio: ${{this.price}}</p>
+        <a href="/products/{{this._id}}" class="vermas">Ver mas detalles...</a>
+        <form id="addToCartForm_{{this._id}}" method="PUT" class="formi"> <!-- Agregar el ID del producto al ID del formulario -->
+            <input type="hidden" name="productId" value="{{this._id}}">
+            <button type="submit" class="btn-submit">Agregar al carrito</button>
+        </form>
+    </div>
+    {{/each}}
+ 
+</div>
+   <div class="pagination">
+        {{#if hasPrevPage}}
+        <a href="?page={{prevPage}}">Página anterior</a>
+        {{/if}}
+        {{#if hasNextPage}}
+        <a href="?page={{nextPage}}">Página siguiente</a>
+        {{/if}}
+    </div>
+<script src="/js/handlemain.js"></script>
+<script src="/js/logout.js"></script>
