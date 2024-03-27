@@ -1,0 +1,180 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    color: white;
+    position: fixed;
+
+    justify-content: space-between;
+    background-color: rgb(60, 96, 114);
+}
+
+h5 {
+    font-size: 0.8rem;
+
+}
+.cart{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.product-cart{
+    text-align: center;
+    background-color: rgb(240, 234, 226);
+    width: 300px;
+    max-width: 300px;
+}
+.text-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.btn-close {
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+    color: black;
+    background-color: rgb(248, 154, 38);
+}
+
+.btn-close:hover {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+    color: black;
+    background-color: rgb(248, 197, 135);
+}
+
+.products-content {
+    padding: 100px 0;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.pagination {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description-text{
+    display: flex;    
+    max-height: 80px;
+    overflow: hidden;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+    align-items: center;
+    width: 200px;
+    max-width: 200px;
+    height: 200px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 0.3rem;
+
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 6px 0;
+    background-color: rgb(248, 154, 38);
+    border-style: none;
+    cursor: pointer;
+}
+
+.formi {
+    width: 100%;
+}
+
+.vermas {
+    font-size: 0.8rem;
+}
+
+.login-container {
+    margin: 150px auto;
+    padding: 20px 0;
+    border-radius: 0.4rem;
+    width: 500px;    
+   
+    background-color: rgb(13, 32, 66);
+    font-family: 'Roboto', sans-serif;
+}
+.login-container label {
+   color: white;
+}
+
+
+.form-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+
+}
+
+.input-login {
+    width: 300px;
+    padding: 6px 2px;
+    color: black;
+    border-style: none;
+    border-radius: 0.2rem;
+}
+
+.form-login label {
+    padding: 6px 10px;
+}
+
+.btn-login-submit {
+    margin: 20px auto;
+    padding: 8px 0;
+    width: 300px;
+    color: black;
+    border-style: none;
+    border-radius: 0.2rem;
+    background-color: rgb(248, 154, 38);
+    cursor: pointer;
+}
+
+
+.btn-login-submit:hover {
+    cursor: pointer;
+   font-weight: 400;
+    background-color: rgb(244, 182, 107);
+}
+
+.alink-register{
+    color: white;
+    text-decoration-line: none;
+}
+
+.title-reg{
+    width: 100%;
+    color: rgb(66, 18, 62);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
