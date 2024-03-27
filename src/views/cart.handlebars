@@ -1,0 +1,12 @@
+<div>
+    <h3>Productos Mostrados por request GET.</h3>
+    <div class="productListContainer2" id="productList">
+        <ul id="productListUL" class="productListUL">
+            {{#each productList}}
+            <li class="product-li">{{this.title}} {{this.description}} {{this.price}} {{this.stock}} {{this.code}}
+                {{this.category}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    
+</div>

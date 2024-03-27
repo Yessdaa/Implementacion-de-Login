@@ -1,0 +1,83 @@
+[
+    {
+      "title": "Nuevo Producto Actualizado 2",
+      "description": "La katana, legendaria espada japonesa, posee una hoja curva afilada y un mango envuelto en piel de raya, fusionando destreza artesanal con elegancia atemporal.",
+      "code": "L54",
+      "price": 400,
+      "status": false,
+      "stock": 500,
+      "category": "katanas",
+      "thumbnail": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2Fkatana-reales&psig=AOvVaw08cjnp92SAQDvHguJu_onn&ust=1708065794475000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOCXw4nfrIQDFQAAAAAdAAAAABAE",
+      "id": 1
+    },
+    {
+      "title": "Nuevo Producto Actualizado",
+      "description": "Impersonación creativa de personajes ficticios. Incluye trajes, accesorios y caracterización precisa, celebrando la cultura pop con pasión y habilidad artística.",
+      "code": "L3",
+      "price": 540,
+      "status": true,
+      "stock": 220,
+      "category": "cosplays",
+      "thumbnails": {
+        "1": "https://http2.mlstatic.com/D_NQ_NP_605533-MLM70834517591_082023-O.webp",
+        "2": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTPdpiwCF0pddxlJeeaFK2klxPhEBMLppZStn5Kk5saitUWZKvdZXEqcLEXM0e8xSSvtvsNqwUR_gm9-d1kiA4ubHJbCnfSgM6waUCQSXg&usqp=CAE"
+      },
+      "id": 2
+    },
+    {
+      "title": "Posters",
+      "description": "Posters anime",
+      "code": "T1",
+      "price": 190,
+      "status": true,
+      "stock": 400,
+      "category": "posters",
+      "thumbnails": {
+        "1": "https://moviepostermexico.com/cdn/shop/products/nanatsu_prisoners_of_the_sky_full_visual_1860x.jpg?v=1598502615",
+        "2": "https://m.media-amazon.com/images/I/71MyiKMP4SL._AC_UF894,1000_QL80_.jpg",
+        "3": "https://images-cdn.ubuy.co.in/633ff1157e3fbc25557517c8-one-piece-poster-japanese-anime-posters.jpg"
+      },
+      "id": 510447
+    },
+  
+        {
+          "title": "Nuevo Producto Actualizado 2",
+          "description": "La katana, legendaria espada japonesa, posee una hoja curva afilada y un mango envuelto en piel de raya, fusionando destreza artesanal con elegancia atemporal.",
+          "code": "L54",
+          "price": 400,
+          "status": false,
+          "stock": 500,
+          "category": "katanas",
+          "thumbnail": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flistado.mercadolibre.com.mx%2Fkatana-reales&psig=AOvVaw08cjnp92SAQDvHguJu_onn&ust=1708065794475000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOCXw4nfrIQDFQAAAAAdAAAAABAE",
+          "id": 1
+        },
+        {
+          "title": "Nuevo Producto Actualizado",
+          "description": "Impersonación creativa de personajes ficticios. Incluye trajes, accesorios y caracterización precisa, celebrando la cultura pop con pasión y habilidad artística.",
+          "code": "L3",
+          "price": 540,
+          "status": true,
+          "stock": 220,
+          "category": "cosplays",
+          "thumbnails": {
+            "1": "https://http2.mlstatic.com/D_NQ_NP_605533-MLM70834517591_082023-O.webp",
+            "2": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTPdpiwCF0pddxlJeeaFK2klxPhEBMLppZStn5Kk5saitUWZKvdZXEqcLEXM0e8xSSvtvsNqwUR_gm9-d1kiA4ubHJbCnfSgM6waUCQSXg&usqp=CAE"
+          },
+          "id": 2
+        },
+        {
+          "title": "Posters",
+          "description": "Posters anime",
+          "code": "T1",
+          "price": 190,
+          "status": true,
+          "stock": 400,
+          "category": "posters",
+          "thumbnails": {
+            "1": "https://moviepostermexico.com/cdn/shop/products/nanatsu_prisoners_of_the_sky_full_visual_1860x.jpg?v=1598502615",
+            "2": "https://m.media-amazon.com/images/I/71MyiKMP4SL._AC_UF894,1000_QL80_.jpg",
+            "3": "https://images-cdn.ubuy.co.in/633ff1157e3fbc25557517c8-one-piece-poster-japanese-anime-posters.jpg"
+          },
+          "id": 510447
+        }
+      ]

@@ -1,0 +1,20 @@
+{{#each products}}
+<div class="product">
+    <h2>{{this.title}}</h2>
+    <p>{{this.description}}</p>
+    <p>Precio: ${{this.price}}</p>
+    <a href="/{{this._id}}">Ver detalles</a>
+    <form id="addToCartForm_{{this._id}}" method="PUT"> 
+        <input type="hidden" name="productId" value="{{this._id}}">        
+        <button type="submit">Agregar al carrito</button>
+    </form>
+</div>
+{{/each}}
+
+{{#if hasPrevPage}}
+<a href="?page={{prevPage}}">Página anterior</a>
+{{/if}}
+{{#if hasNextPage}}
+<a href="?page={{nextPage}}">Página siguiente</a>
+{{/if}}
+<script src="/js/handlemain.js"></script> 
