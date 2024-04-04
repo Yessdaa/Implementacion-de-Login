@@ -59,7 +59,7 @@ app.listen(PORT, () => {
 });
 const connectMongoDB = async () => {
     try {
-        await mongoose.connect('mongodb+srv://bernardodieta:Mexico926+@ecommerce.7wbxdym.mongodb.net/?retryWrites=true&w=majority&appName=ecommerce');
+        await mongoose.connect('mongodb+srv://ingriddiaz:Mexico926+@ecommerce.7wbxdym.mongodb.net/?retryWrites=true&w=majority&appName=ecommerce');
         console.log("Conectado con exito a MongoDB usando Moongose.");
 
 
