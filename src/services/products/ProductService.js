@@ -1,5 +1,5 @@
 import { productModel } from "../models/product.model.js";
-import { BadRequestError, NotFoundError } from "../../../utils/index.js";
+import { BadRequestError, NotFoundError } from "../../utils/index.js";
 import moment from 'moment'
 
 export class ProductService {

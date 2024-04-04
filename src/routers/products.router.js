@@ -1,15 +1,15 @@
 import express from 'express'
 import mongoose from 'mongoose';
-import { ProductManager } from '../services/products/ProductService.js';
+import { ProductService } from '../services/products/ProductService.js';
 import { BadRequestError, ApiResponse } from '../utils/index.js'
 import Product from '../services/products/ProductClass.js'
-import { uploader } from '../utils/utils.js';
+
 import { productModel } from '../services/models/product.model.js';
 import moment from 'moment'
 
 const productsRoutes = express.Router();
 
-const productManager = new ProductManager()
+const productManager = new ProductService()
 
 productsRoutes.get('/', async (req, res) => {
     try {
@@ -103,10 +103,12 @@ productsRoutes.get('/:id', async (req, res) => {
     }
 })
 
-productsRoutes.post('/', uploader.fields([{ name: 'img1', maxCount: 1 }, { name: 'img2', maxCount: 1 }]), async (req, res) => {
+productsRoutes.post('/', async (req, res) => {
+
     try {
         const { title, shortdescription, description, stock, price, pcode, category, img1, img2 } = req.body
         const newProduct = new Product(title, shortdescription, description, stock, price, pcode, category, img1, img2)
+
         newProduct.fecharegistro = moment().format()
         const product = await productManager.addNewProduct(newProduct)
         return ApiResponse.success(res, product)

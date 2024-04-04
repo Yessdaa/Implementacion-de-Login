@@ -1,13 +1,13 @@
 import { userModel } from '../models/user.model.js'
 import moment from 'moment'
 import crypto from 'crypto'
-import { BadRequestError, NotFoundError } from '../../../utils/errors.js'
+import { BadRequestError, NotFoundError } from '../../utils/errors.js'
 import dotenv from 'dotenv';
 import mongoose from "mongoose";
 
 dotenv.config();
 const { ObjectId } = mongoose.Types;
-export class UserService {
+export class UserManager {
     encryptionKey = process.env.ENCRYPTION_KEY;
     encryptionIV = process.env.ENCRYPTION_IV;
     

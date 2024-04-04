@@ -1,5 +1,5 @@
 import { cartModel } from "../models/cart.model.js";
-import { BadRequestError, NotFoundError } from "../../../utils/index.js";
+import { BadRequestError, NotFoundError } from "../../utils/index.js";
 export default class CartService {
     constructor() { }
 

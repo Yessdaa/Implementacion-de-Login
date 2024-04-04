@@ -1,7 +1,6 @@
 import express from 'express'
-import mongoose from 'mongoose'
 import { UserManager } from '../services/users/UserService.js'
-import { Users } from '../services/users/UserClass.js'
+import { Users } from '../services/users/UsersClass.js'
 import { ApiResponse } from '../utils/apiResponse.js'
 
 
@@ -17,16 +16,16 @@ userRoutes.get('/', async (req, res) => {
     }
 })
 
-userRoutes.post('/', async (req, res) => {
-    try {
-        const { name, lastName, email, username, password } = req.body
-        const newUser = new Users(name, lastName, email, username, password)
-        const user = await userManager.saveUser(newUser)
-        return ApiResponse.success(res, user)
-    } catch (error) {
-        return ApiResponse.error(res, error)
-    }
-})
+// userRoutes.post('/', async (req, res) => {
+//     try {
+//         const { name, lastName, email, username, password } = req.body
+//         const newUser = new Users(name, lastName, email, username, password)
+//         const user = await userManager.saveUser(newUser)
+//         return ApiResponse.success(res, user)
+//     } catch (error) {
+//         return ApiResponse.error(res, error)
+//     }
+// })
 
 userRoutes.get('/:id?', async (req, res) => {
     try {

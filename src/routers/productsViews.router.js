@@ -1,7 +1,7 @@
 import express from 'express';
 import { BadRequestError } from '../utils/index.js'
 import mongoose from 'mongoose';
-import { productModel } from "../services/db/models/product.model.js";
+import { productModel } from "../services/models/product.model.js";
 
 const viewsProductsRouter = express.Router();
 
